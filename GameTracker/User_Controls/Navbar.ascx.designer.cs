@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------------
 
 namespace GameTracker {
-
-
+    
+    
     public partial class Navbar {
-
+        
         /// <summary>
         /// home control.
         /// </summary>
@@ -20,7 +20,7 @@ namespace GameTracker {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
-
+        
         /// <summary>
         /// students control.
         /// </summary>
@@ -29,32 +29,32 @@ namespace GameTracker {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl students;
-
+        
         /// <summary>
-        /// courses control.
+        /// playerdetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl courses;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl playerdetails;
+        
         /// <summary>
-        /// departments control.
+        /// users control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl departments;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl users;
+        
         /// <summary>
-        /// contact control.
+        /// gamedetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl contact;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl gamedetails;
     }
 }

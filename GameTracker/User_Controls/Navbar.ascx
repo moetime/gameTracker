@@ -16,9 +16,9 @@
             <ul class="nav navbar-nav navbar-right">
                 <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
                 <li id="students" runat="server"><a href="Students.aspx"><i class="fa fa-graduation-cap fa-lg"></i> Students</a></li>
-                <li id="courses" runat="server"><a href="Courses.aspx"><i class="fa fa-book fa-lg"></i> Courses</a></li>
-                <li id="departments" runat="server"><a href="Departments.aspx"><i class="fa fa-puzzle-piece fa-lg"></i> Departments</a></li>
-                <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact</a></li>
+                <li id="playerdetails" runat="server"><a href="PlayerDetails.aspx"><i class="fa fa-users fa-lg"></i> Players</a></li>
+                <li id="users" runat="server"><a href="Users_Details.aspx"><i class="fa fa-user fa-lg"></i> New Players</a></li>
+                <li id="gamedetails" runat="server"><a href="Game_Details.aspx"><i class="fa fa-info-circle"></i> Game Details</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

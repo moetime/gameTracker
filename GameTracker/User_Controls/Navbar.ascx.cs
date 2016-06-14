@@ -33,14 +33,14 @@ namespace GameTracker {
                 case "Students":
                     students.Attributes.Add("class", "active");
                     break;
-                case "Courses":
-                    courses.Attributes.Add("class", "active");
+                case "Players":
+                    playerdetails.Attributes.Add("class", "active");
                     break;
-                case "Departments":
-                    departments.Attributes.Add("class", "active");
+                case "New Players":
+                    users.Attributes.Add("class", "active");
                     break;
-                case "Contact":
-                    contact.Attributes.Add("class", "active");
+                case "Game_Details":
+                    gamedetails.Attributes.Add("class", "active");
                     break;
             }
         }
