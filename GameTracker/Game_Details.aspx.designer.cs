@@ -11,7 +11,7 @@ namespace GameTracker
 {
 
 
-    public partial class Default
+    public partial class Game_Details
     {
     }
 }

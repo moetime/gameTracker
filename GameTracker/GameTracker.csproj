@@ -84,8 +84,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Courses.aspx" />
-    <Content Include="Departments.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Game_Details.aspx" />
     <Content Include="Models\ContosoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ContosoModel.edmx</DependentUpon>
@@ -97,6 +97,8 @@
       <LastGenOutput>ContosoModel.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="PlayerDetails.aspx" />
+    <Content Include="PlayerGridView.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <EntityDeploy Include="Models\ContosoModel.edmx">
@@ -114,7 +116,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Contact.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -122,7 +123,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -148,23 +148,11 @@
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="User_Details.aspx" />
+    <Content Include="User_GridView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Courses.aspx.cs">
-      <DependentUpon>Courses.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Courses.aspx.designer.cs">
-      <DependentUpon>Courses.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,12 +160,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Departments.aspx.cs">
-      <DependentUpon>Departments.aspx</DependentUpon>
+    <Compile Include="Game_Details.aspx.cs">
+      <DependentUpon>Game_Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Departments.aspx.designer.cs">
-      <DependentUpon>Departments.aspx</DependentUpon>
+    <Compile Include="Game_Details.aspx.designer.cs">
+      <DependentUpon>Game_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContosoModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -205,6 +193,20 @@
     </Compile>
     <Compile Include="Models\Student.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerDetails.aspx.cs">
+      <DependentUpon>PlayerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayerDetails.aspx.designer.cs">
+      <DependentUpon>PlayerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerGridView.aspx.cs">
+      <DependentUpon>PlayerGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayerGridView.aspx.designer.cs">
+      <DependentUpon>PlayerGridView.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentDetails.aspx.cs">
       <DependentUpon>StudentDetails.aspx</DependentUpon>
@@ -241,6 +243,20 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Details.aspx.cs">
+      <DependentUpon>User_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Details.aspx.designer.cs">
+      <DependentUpon>User_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_GridView.aspx.cs">
+      <DependentUpon>User_GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_GridView.aspx.designer.cs">
+      <DependentUpon>User_GridView.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

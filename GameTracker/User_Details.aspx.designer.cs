@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GameTracker {
+namespace GameTracker
+{
 
 
-    public partial class Departments {
+    public partial class User_Details
+    {
     }
 }
