@@ -96,6 +96,16 @@
       <DependentUpon>ContosoModel.edmx</DependentUpon>
       <LastGenOutput>ContosoModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\GameTracker.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameTracker.edmx</DependentUpon>
+      <LastGenOutput>GameTracker.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\GameTracker.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameTracker.edmx</DependentUpon>
+      <LastGenOutput>GameTracker.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="PlayerDetails.aspx" />
     <Content Include="Player.aspx" />
@@ -107,6 +117,13 @@
     </EntityDeploy>
     <Content Include="Models\ContosoModel.edmx.diagram">
       <DependentUpon>ContosoModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\GameTracker.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GameTracker.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\GameTracker.edmx.diagram">
+      <DependentUpon>GameTracker.edmx</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -190,6 +207,30 @@
     </Compile>
     <Compile Include="Models\Enrollment.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Game.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTracker.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTracker.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTracker.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTracker.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTracker.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Player.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Score.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Student.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
@@ -277,7 +318,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2002</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
