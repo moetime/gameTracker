@@ -98,7 +98,7 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="PlayerDetails.aspx" />
-    <Content Include="PlayerGridView.aspx" />
+    <Content Include="Player.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <EntityDeploy Include="Models\ContosoModel.edmx">
@@ -149,7 +149,7 @@
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="User_Details.aspx" />
-    <Content Include="User_GridView.aspx" />
+    <Content Include="Users.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -201,12 +201,12 @@
     <Compile Include="PlayerDetails.aspx.designer.cs">
       <DependentUpon>PlayerDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PlayerGridView.aspx.cs">
-      <DependentUpon>PlayerGridView.aspx</DependentUpon>
+    <Compile Include="Player.aspx.cs">
+      <DependentUpon>Player.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PlayerGridView.aspx.designer.cs">
-      <DependentUpon>PlayerGridView.aspx</DependentUpon>
+    <Compile Include="Player.aspx.designer.cs">
+      <DependentUpon>Player.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentDetails.aspx.cs">
       <DependentUpon>StudentDetails.aspx</DependentUpon>
@@ -251,12 +251,12 @@
     <Compile Include="User_Details.aspx.designer.cs">
       <DependentUpon>User_Details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User_GridView.aspx.cs">
-      <DependentUpon>User_GridView.aspx</DependentUpon>
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User_GridView.aspx.designer.cs">
-      <DependentUpon>User_GridView.aspx</DependentUpon>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

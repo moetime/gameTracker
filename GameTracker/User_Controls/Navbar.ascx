@@ -9,15 +9,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="Default.aspx"><i class="fa fa-fort-awesome fa-lg"></i> Contoso University</a>
+            <a class="navbar-brand" href="Default.aspx"><i class="fa fa-fort-awesome fa-md"></i> The Gamblers Den</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
                 <li id="students" runat="server"><a href="Students.aspx"><i class="fa fa-graduation-cap fa-lg"></i> Students</a></li>
-                <li id="playerdetails" runat="server"><a href="PlayerDetails.aspx"><i class="fa fa-users fa-lg"></i> Players</a></li>
-                <li id="users" runat="server"><a href="Users_Details.aspx"><i class="fa fa-user fa-lg"></i> New Players</a></li>
+                <li id="player" runat="server"><a href="Player.aspx"><i class="fa fa-users fa-lg"></i> Players</a></li>
+                <li id="users" runat="server"><a href="Users.aspx"><i class="fa fa-user fa-lg"></i> New Players</a></li>
                 <li id="gamedetails" runat="server"><a href="Game_Details.aspx"><i class="fa fa-info-circle"></i> Game Details</a></li>
             </ul>
         </div>

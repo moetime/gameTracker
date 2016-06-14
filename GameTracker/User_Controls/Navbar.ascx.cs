@@ -34,7 +34,7 @@ namespace GameTracker {
                     students.Attributes.Add("class", "active");
                     break;
                 case "Players":
-                    playerdetails.Attributes.Add("class", "active");
+                    player.Attributes.Add("class", "active");
                     break;
                 case "New Players":
                     users.Attributes.Add("class", "active");
