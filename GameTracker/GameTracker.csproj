@@ -85,7 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="Game_Details.aspx" />
+    <Content Include="GameDetails.aspx" />
+    <Content Include="Gridview template item view1.aspx" />
     <Content Include="Models\ContosoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ContosoModel.edmx</DependentUpon>
@@ -108,7 +109,7 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="PlayerDetails.aspx" />
-    <Content Include="Player.aspx" />
+    <Content Include="Players.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <EntityDeploy Include="Models\ContosoModel.edmx">
@@ -165,8 +166,6 @@
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
-    <Content Include="User_Details.aspx" />
-    <Content Include="Users.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -177,12 +176,19 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Game_Details.aspx.cs">
-      <DependentUpon>Game_Details.aspx</DependentUpon>
+    <Compile Include="GameDetails.aspx.cs">
+      <DependentUpon>GameDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Game_Details.aspx.designer.cs">
-      <DependentUpon>Game_Details.aspx</DependentUpon>
+    <Compile Include="GameDetails.aspx.designer.cs">
+      <DependentUpon>GameDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gridview template item view1.aspx.cs">
+      <DependentUpon>Gridview template item view1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gridview template item view1.aspx.designer.cs">
+      <DependentUpon>Gridview template item view1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContosoModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -242,12 +248,12 @@
     <Compile Include="PlayerDetails.aspx.designer.cs">
       <DependentUpon>PlayerDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Player.aspx.cs">
-      <DependentUpon>Player.aspx</DependentUpon>
+    <Compile Include="Players.aspx.cs">
+      <DependentUpon>Players.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Player.aspx.designer.cs">
-      <DependentUpon>Player.aspx</DependentUpon>
+    <Compile Include="Players.aspx.designer.cs">
+      <DependentUpon>Players.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentDetails.aspx.cs">
       <DependentUpon>StudentDetails.aspx</DependentUpon>
@@ -284,20 +290,6 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="User_Details.aspx.cs">
-      <DependentUpon>User_Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User_Details.aspx.designer.cs">
-      <DependentUpon>User_Details.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Users.aspx.cs">
-      <DependentUpon>Users.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Users.aspx.designer.cs">
-      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

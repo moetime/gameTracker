@@ -18,7 +18,7 @@
                 <li id="students" runat="server"><a href="Students.aspx"><i class="fa fa-graduation-cap fa-lg"></i> Students</a></li>
                 <li id="player" runat="server"><a href="Player.aspx"><i class="fa fa-users fa-lg"></i> Players</a></li>
                 <li id="users" runat="server"><a href="Users.aspx"><i class="fa fa-user fa-lg"></i> New Players</a></li>
-                <li id="gamedetails" runat="server"><a href="Game_Details.aspx"><i class="fa fa-info-circle"></i> Game Details</a></li>
+                <li id="gamedetails" runat="server"><a href="GameDetails.aspx"><i class="fa fa-info-circle"></i> Game Details</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
