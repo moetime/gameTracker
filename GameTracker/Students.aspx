@@ -23,8 +23,7 @@
                     DataKeyNames="StudentID"
                     AllowPaging="true" PageSize="3" OnPageIndexChanging="StudentsGridView_PageIndexChanging"
                     AllowSorting="true" OnSorting="StudentsGridView_Sorting"
-                    OnRowDataBound="StudentsGridView_RowDataBound"
-                    > 
+                    OnRowDataBound="StudentsGridView_RowDataBound"> 
                     <Columns>
                         <asp:BoundField DataField="StudentID" HeaderText="Student ID" Visible="true" SortExpression="StudentID" />
                         <asp:BoundField DataField="LastName" HeaderText="Last Name" Visible="true" SortExpression="LastName" />
