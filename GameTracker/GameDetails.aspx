@@ -27,11 +27,6 @@
                         ControlToValidate="DatePlayedTextBox" MinimumValue="01/01/2000" MaximumValue="01/01/2999"
                         Type="Date" Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large"></asp:RangeValidator>
                 </div>
-                <div class="text-right">
-                    <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
-                        UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
-                    <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click" />
-                </div>
             </div>
         </div>
         <div class="row">
@@ -40,8 +35,8 @@
                 <h1>Player A</h1>
                 <br />
                 <div class="form-group">
-                    <label class="control-label" for="ANameTextBox">Name</label>
-                    <asp:DropDownList runat="server" CssClass="form-control" ID="ANameTextBox" placeholder="Name" required="true"></asp:DropDownList>
+                    <label class="control-label" for="BPlayerDropDownList">Player</label>
+                    <asp:DropDownList runat="server" CssClass="form-control" ID="APlayerDropDownList" placeholder="Name" required="true"></asp:DropDownList>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="AWinsTextBox">Wins</label>
@@ -53,8 +48,8 @@
                 <h1>Player B</h1>
                 <br />
                 <div class="form-group">
-                    <label class="control-label" for="BNameTextBox">Name</label>
-                    <asp:DropDownList runat="server" CssClass="form-control" ID="BNameTextBox" placeholder="Name" required="true"></asp:DropDownList>
+                    <label class="control-label" for="BPlayerDropDownList">Player</label>
+                    <asp:DropDownList runat="server" CssClass="form-control" ID="BPlayerDropDownList" placeholder="Name" required="true"></asp:DropDownList>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="BWinsTextBox">Wins</label>
@@ -62,6 +57,14 @@
                 </div>
             </div>
         </div>
+         <div class="row">             
+             
+            <div class="col-md-offset-3 col-md-6 text-right">
+                    <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
+                        UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
+                    <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click" />
+                </div>
+         </div>
     </div>
 
 
