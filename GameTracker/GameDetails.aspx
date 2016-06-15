@@ -5,28 +5,60 @@
      <div class="container">
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
-                <h1>Student Details</h1>
+                <h1>Game Details</h1>
                 <h5>All Fields are Required</h5>
                 <br />
                 <div class="form-group">
-                    <label class="control-label" for="LastNameTextBox">Last Name</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="LastNameTextBox" placeholder="Last Name" required="true"></asp:TextBox>
+                    <label class="control-label" for="NameTextBox">Name</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="NameTextBox" placeholder="Name" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="FirstNameTextBox">First Name</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="FirstNameTextBox" placeholder="First Name" required="true"></asp:TextBox>
+                    <label class="control-label" for="DescriptionTextBox">Description</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="DescriptionTextBox" placeholder="Description" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="EnrollmentDateTextBox">Enrollment Date</label>
-                    <asp:TextBox runat="server" TextMode="Date" CssClass="form-control" ID="EnrollmentDateTextBox" placeholder="Enrollment Date Format: mm/dd/yyyy" required="true"></asp:TextBox>
-                    <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Invalid Date! Format: mm/dd/yyyy"
-                        ControlToValidate="EnrollmentDateTextBox" MinimumValue="01/01/2000" MaximumValue="01/01/2999"
+                    <label class="control-label" for="SpectatorsTextBox">Spectators</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="SpectatorsTextBox" placeholder="Spectators" required="true"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="DatePlayedTextBox">Date Played</label>
+                    <asp:TextBox runat="server" TextMode="Date" CssClass="form-control" ID="DatePlayedTextBox" placeholder="Enrollment Date Format: mm/dd/yyyy" required="true"></asp:TextBox>
+                    <asp:RangeValidator ID="DateRangeValidator" runat="server" ErrorMessage="Invalid Date! Format: mm/dd/yyyy"
+                        ControlToValidate="DatePlayedTextBox" MinimumValue="01/01/2000" MaximumValue="01/01/2999"
                         Type="Date" Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large"></asp:RangeValidator>
                 </div>
                 <div class="text-right">
                     <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
                         UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
                     <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Player 1 -->
+            <div class="col-md-offset-3 col-md-3">
+                <h1>Player A</h1>
+                <br />
+                <div class="form-group">
+                    <label class="control-label" for="ANameTextBox">Name</label>
+                    <asp:DropDownList runat="server" CssClass="form-control" ID="ANameTextBox" placeholder="Name" required="true"></asp:DropDownList>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="AWinsTextBox">Wins</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="AWinsTextBox" placeholder="Wins" required="true"></asp:TextBox>
+                </div>
+            </div>
+            <!-- Player 2 -->
+             <div class="col-md-3">
+                <h1>Player B</h1>
+                <br />
+                <div class="form-group">
+                    <label class="control-label" for="BNameTextBox">Name</label>
+                    <asp:DropDownList runat="server" CssClass="form-control" ID="BNameTextBox" placeholder="Name" required="true"></asp:DropDownList>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="BWinsTextBox">Wins</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="BWinsTextBox" placeholder="Wins" required="true"></asp:TextBox>
                 </div>
             </div>
         </div>
