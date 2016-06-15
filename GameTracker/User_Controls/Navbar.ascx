@@ -15,7 +15,6 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li id="students" runat="server"><a href="Students.aspx"><i class="fa fa-graduation-cap fa-lg"></i> Students</a></li>
                 <li id="player" runat="server"><a href="Players.aspx"><i class="fa fa-users fa-lg"></i> Players</a></li>
                 <li id="users" runat="server"><a href="PlayerDetails.aspx"><i class="fa fa-user fa-lg"></i> New Players</a></li>
                 <li id="gamedetails" runat="server"><a href="GameDetails.aspx"><i class="fa fa-info-circle"></i> Game Details</a></li>

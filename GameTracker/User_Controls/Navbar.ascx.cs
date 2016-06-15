@@ -30,9 +30,6 @@ namespace GameTracker {
                 case "Home Page":
                     home.Attributes.Add("class", "active");
                     break;
-                case "Students":
-                    students.Attributes.Add("class", "active");
-                    break;
                 case "Players":
                     player.Attributes.Add("class", "active");
                     break;
