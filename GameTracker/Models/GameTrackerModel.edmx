@@ -110,8 +110,8 @@
           <NavigationProperty Name="Player" Relationship="Self.FK_Scores_PlayerID" FromRole="Scores" ToRole="Players" />
         </EntityType>
         <Association Name="FK_Scores_GameID">
-          <End Role="Games" Type="Self.Game" Multiplicity="1" />
-          <End Role="Scores" Type="Self.Score" Multiplicity="*" />
+          <End Role="Games" Type="GameTrackerModel.Game" Multiplicity="1" />
+          <End Role="Scores" Type="GameTrackerModel.Score" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Games">
               <PropertyRef Name="GameID" />
@@ -122,8 +122,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Scores_PlayerID">
-          <End Role="Players" Type="Self.Player" Multiplicity="1" />
-          <End Role="Scores" Type="Self.Score" Multiplicity="*" />
+          <End Role="Players" Type="GameTrackerModel.Player" Multiplicity="1" />
+          <End Role="Scores" Type="GameTrackerModel.Score" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Players">
               <PropertyRef Name="PlayerID" />
@@ -133,10 +133,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Games" EntityType="Self.Game" />
-          <EntitySet Name="Players" EntityType="Self.Player" />
-          <EntitySet Name="Scores" EntityType="Self.Score" />
+        <EntityContainer Name="GameTrackerConn" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Games" EntityType="GameTrackerModel.Game" />
+          <EntitySet Name="Players" EntityType="GameTrackerModel.Player" />
+          <EntitySet Name="Scores" EntityType="GameTrackerModel.Score" />
           <AssociationSet Name="FK_Scores_GameID" Association="Self.FK_Scores_GameID">
             <End Role="Games" EntitySet="Games" />
             <End Role="Scores" EntitySet="Scores" />
@@ -151,7 +151,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="GameTrackerModelStoreContainer" CdmEntityContainer="Entities">
+        <EntityContainerMapping StorageEntityContainer="GameTrackerModelStoreContainer" CdmEntityContainer="GameTrackerConn">
           <EntitySetMapping Name="Games">
             <EntityTypeMapping TypeName="GameTrackerModel.Game">
               <MappingFragment StoreEntitySet="Games">

@@ -11,34 +11,34 @@ using System.Web.ModelBinding;
 
 namespace GameTracker
 {
-    public partial class StudentDetails : System.Web.UI.Page
+    public partial class PlayerDetails : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
-                this.GetStudent();
+                this.GetPlayer();
 
             }
         }
 
-        protected void GetStudent()
+        protected void GetPlayer()
         {
             //populate form with existing student record
-            int StudentID = Convert.ToInt32(Request.QueryString["StudentID"]);
+            int PlayerID = Convert.ToInt32(Request.QueryString["PlayerID"]);
             //connect to database with ef
-            using (DefaultConn db = new DefaultConn())
+            using (GameTrackerConn db = new GameTrackerConn())
             {
                 //populate student instance with student id with url param
-                Student updatedStudent = (from student in db.Students
-                                          where student.StudentID == StudentID
-                                          select student).FirstOrDefault();
+                Player updatedPlayer = (from player in db.Players
+                                          where player.PlayerID == PlayerID
+                                          select player).FirstOrDefault();
 
-                if (updatedStudent != null)
+                if (updatedPlayer != null)
                 {
-                    LastNameTextBox.Text = updatedStudent.LastName.ToString();
-                    FirstNameTextBox.Text = updatedStudent.FirstMidName.ToString();
-                    EnrollmentDateTextBox.Text = updatedStudent.EnrollmentDate.ToString("yyyy-MM-dd");
+                    NameTextBox.Text = updatedPlayer.Name.ToString();
+                    AgeTextBox.Text = updatedPlayer.Age.ToString();
+                    GenderTextBox.Text = updatedPlayer.Gender.ToString(); 
                 }
 
             }
@@ -46,41 +46,41 @@ namespace GameTracker
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             // Redirect back to Students page
-            Response.Redirect("~/Students.aspx");
+            Response.Redirect("~/Players.aspx");
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server
-            using (DefaultConn db = new DefaultConn())
+            using (GameTrackerConn db = new GameTrackerConn())
             {
                 // use the Student model to create a new student object and
                 // save a new record
-                Student newStudent = new Student();
+                Player newPlayer = new Player();
 
-                int StudentID = 0;
+                int PlayerID = 0;
 
-                if (Request.QueryString.Count > 0) // our URL has a StudentID in it
+                if (Request.QueryString.Count > 0) // our URL has a PlayerID in it
                 {
                     // get the id from the URL
-                    StudentID = Convert.ToInt32(Request.QueryString["StudentID"]);
+                    PlayerID = Convert.ToInt32(Request.QueryString["PlayerID"]);
 
                     // get the current student from EF DB
-                    newStudent = (from student in db.Students
-                                  where student.StudentID == StudentID
-                                  select student).FirstOrDefault();
+                    newPlayer = (from player in db.Players
+                                  where player.PlayerID == PlayerID
+                                  select player).FirstOrDefault();
                 }
 
                 // add form data to the new student record
-                newStudent.LastName = LastNameTextBox.Text;
-                newStudent.FirstMidName = FirstNameTextBox.Text;
-                newStudent.EnrollmentDate = Convert.ToDateTime(EnrollmentDateTextBox.Text);
+                newPlayer.Name = NameTextBox.Text;
+                newPlayer.Age = Convert.ToInt32(AgeTextBox.Text);
+                newPlayer.Gender = GenderTextBox.Text;
 
                 // use LINQ to ADO.NET to add / insert new student into the database
 
-                if (StudentID == 0)
+                if (PlayerID == 0)
                 {
-                    db.Students.Add(newStudent);
+                    db.Players.Add(newPlayer);
                 }
 
 
@@ -88,7 +88,7 @@ namespace GameTracker
                 db.SaveChanges();
 
                 // Redirect back to the updated students page
-                Response.Redirect("~/Students.aspx");
+                Response.Redirect("~/Players.aspx");
             }
         }
     }

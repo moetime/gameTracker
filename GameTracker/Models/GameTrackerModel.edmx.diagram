@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="18b7254f424442d08919bff1ef88c4f5" Name="Diagram1">
+      <Diagram DiagramId="26f70c64208c4c9c90313a68dab400a4" Name="Diagram1">
         <EntityTypeShape EntityType="GameTrackerModel.Game" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="GameTrackerModel.Player" Width="1.5" PointX="5.125" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameTrackerModel.Player" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="GameTrackerModel.Score" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="GameTrackerModel.FK_Scores_GameID" ManuallyRouted="false" />
         <AssociationConnector Association="GameTrackerModel.FK_Scores_PlayerID" ManuallyRouted="false" />

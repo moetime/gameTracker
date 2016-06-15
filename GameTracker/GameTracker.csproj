@@ -86,7 +86,6 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="GameDetails.aspx" />
-    <Content Include="Gridview template item view1.aspx" />
     <Content Include="Models\ContosoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ContosoModel.edmx</DependentUpon>
@@ -97,15 +96,15 @@
       <DependentUpon>ContosoModel.edmx</DependentUpon>
       <LastGenOutput>ContosoModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\GameTracker.Context.tt">
+    <Content Include="Models\GameTrackerModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GameTracker.edmx</DependentUpon>
-      <LastGenOutput>GameTracker.Context.cs</LastGenOutput>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+      <LastGenOutput>GameTrackerModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\GameTracker.tt">
+    <Content Include="Models\GameTrackerModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GameTracker.edmx</DependentUpon>
-      <LastGenOutput>GameTracker.cs</LastGenOutput>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+      <LastGenOutput>GameTrackerModel.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
     <Content Include="PlayerDetails.aspx" />
@@ -119,12 +118,12 @@
     <Content Include="Models\ContosoModel.edmx.diagram">
       <DependentUpon>ContosoModel.edmx</DependentUpon>
     </Content>
-    <EntityDeploy Include="Models\GameTracker.edmx">
+    <EntityDeploy Include="Models\GameTrackerModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GameTracker.Designer.cs</LastGenOutput>
+      <LastGenOutput>GameTrackerModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\GameTracker.edmx.diagram">
-      <DependentUpon>GameTracker.edmx</DependentUpon>
+    <Content Include="Models\GameTrackerModel.edmx.diagram">
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -151,8 +150,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="StudentDetails.aspx" />
-    <Content Include="Students.aspx" />
     <Content Include="User_Controls\Jumbotron.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="Scripts\app.js" />
@@ -183,13 +180,6 @@
     <Compile Include="GameDetails.aspx.designer.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Gridview template item view1.aspx.cs">
-      <DependentUpon>Gridview template item view1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Gridview template item view1.aspx.designer.cs">
-      <DependentUpon>Gridview template item view1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Models\ContosoModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -215,28 +205,28 @@
       <DependentUpon>ContosoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Game.cs">
-      <DependentUpon>GameTracker.tt</DependentUpon>
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GameTracker.Context.cs">
+    <Compile Include="Models\GameTrackerModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GameTracker.Context.tt</DependentUpon>
+      <DependentUpon>GameTrackerModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GameTracker.cs">
+    <Compile Include="Models\GameTrackerModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GameTracker.tt</DependentUpon>
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GameTracker.Designer.cs">
+    <Compile Include="Models\GameTrackerModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GameTracker.edmx</DependentUpon>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Player.cs">
-      <DependentUpon>GameTracker.tt</DependentUpon>
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Score.cs">
-      <DependentUpon>GameTracker.tt</DependentUpon>
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Student.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
@@ -254,20 +244,6 @@
     </Compile>
     <Compile Include="Players.aspx.designer.cs">
       <DependentUpon>Players.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StudentDetails.aspx.cs">
-      <DependentUpon>StudentDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentDetails.aspx.designer.cs">
-      <DependentUpon>StudentDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Students.aspx.cs">
-      <DependentUpon>Students.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Students.aspx.designer.cs">
-      <DependentUpon>Students.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\Jumbotron.ascx.cs">
       <DependentUpon>Jumbotron.ascx</DependentUpon>
