@@ -13,13 +13,13 @@ namespace GameTracker {
     public partial class Navbar {
         
         /// <summary>
-        /// home control.
+        /// private control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
+        protected global::System.Web.UI.WebControls.PlaceHolder @private;
         
         /// <summary>
         /// player control.
@@ -47,5 +47,32 @@ namespace GameTracker {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl gamedetails;
+        
+        /// <summary>
+        /// public control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder @public;
+        
+        /// <summary>
+        /// home control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
+        
+        /// <summary>
+        /// Li1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Li1;
     }
 }

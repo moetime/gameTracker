@@ -122,7 +122,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GameDetails.aspx" />
+    <Content Include="Admin\GameDetails.aspx" />
     <Content Include="Models\ContosoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ContosoModel.edmx</DependentUpon>
@@ -144,8 +144,8 @@
       <LastGenOutput>GameTrackerModel.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="PlayerDetails.aspx" />
-    <Content Include="Players.aspx" />
+    <Content Include="Admin\PlayerDetails.aspx" />
+    <Content Include="Admin\Players.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -206,11 +206,11 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GameDetails.aspx.cs">
+    <Compile Include="Admin\GameDetails.aspx.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GameDetails.aspx.designer.cs">
+    <Compile Include="Admin\GameDetails.aspx.designer.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContosoModel.Context.cs">
@@ -264,18 +264,18 @@
     <Compile Include="Models\Student.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PlayerDetails.aspx.cs">
+    <Compile Include="Admin\PlayerDetails.aspx.cs">
       <DependentUpon>PlayerDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PlayerDetails.aspx.designer.cs">
+    <Compile Include="Admin\PlayerDetails.aspx.designer.cs">
       <DependentUpon>PlayerDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Players.aspx.cs">
+    <Compile Include="Admin\Players.aspx.cs">
       <DependentUpon>Players.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Players.aspx.designer.cs">
+    <Compile Include="Admin\Players.aspx.designer.cs">
       <DependentUpon>Players.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\Jumbotron.ascx.cs">
