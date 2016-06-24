@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author: Tom Tsiliopoulos
+ * @author: Irin Avery and Morrice Pfeiffer
  * @date: May 26, 2016
  * @version: 0.0.1 - added SetActivePage method
  */
@@ -14,7 +14,22 @@ using System.Web.UI.WebControls;
 namespace GameTracker {
     public partial class Navbar : System.Web.UI.UserControl {
         protected void Page_Load(object sender, EventArgs e) {
-            SetActivePage();
+            if (!IsPostBack) {
+                // check if a user is logged in
+                if (HttpContext.Current.User.Identity.IsAuthenticated) {
+                    
+                    publicPlaceholder.Visible = false;
+                    privatePlaceholder.Visible = true;
+                    
+                }
+                else {
+                    // only show login and register
+                    publicPlaceholder.Visible = true;
+                    privatePlaceholder.Visible = false;
+                }
+                SetActivePage();
+            }
+
         }
 
         /**
@@ -30,14 +45,17 @@ namespace GameTracker {
                 case "Home Page":
                     home.Attributes.Add("class", "active");
                     break;
+                case "Games Menu":
+                    games.Attributes.Add("class", "active");
+                    break;
+                case "Login":
+                    login.Attributes.Add("class", "active");
+                    break;
+                case "Register":
+                    register.Attributes.Add("class", "active");
+                    break;
                 case "Players":
-                    player.Attributes.Add("class", "active");
-                    break;
-                case "New Players":
-                    users.Attributes.Add("class", "active");
-                    break;
-                case "Game_Details":
-                    gamedetails.Attributes.Add("class", "active");
+                    players.Attributes.Add("class", "active");
                     break;
             }
         }

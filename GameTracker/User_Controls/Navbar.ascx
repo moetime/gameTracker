@@ -14,20 +14,21 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <asp:PlaceHolder runat="server" ID="private">
-                <li id="player" runat="server"><a href="Players.aspx"><i class="fa fa-users fa-lg"></i> Players</a></li>
-                <li id="users" runat="server"><a href="PlayerDetails.aspx"><i class="fa fa-user fa-lg"></i> New Players</a></li>
-                <li id="gamedetails" runat="server"><a href="GameDetails.aspx"><i class="fa fa-info-circle"></i> Game Details</a></li>
+                
+                <li id="home" runat="server"><a href="/Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+               
+                <asp:PlaceHolder ID="publicPlaceholder" runat="server">
+                    <li id="login" runat="server"><a href="/Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+                    <li id="register" runat="server"><a href="/Register.aspx"><i class="fa fa-user-plus fa-lg"></i> Register</a></li>
+                </asp:PlaceHolder>
 
+                 <asp:PlaceHolder runat="server" ID="privatePlaceholder">
+                <li id="players" runat="server"><a href="/Admin/Players.aspx"><i class="fa fa-users fa-lg"></i> Players</a></li>
+                <li id="games" runat="server"><a href="/Admin/Games.aspx"><i class="fa fa-info-circle"></i> Games</a></li>
+                 <li id="logout" runat="server"><a href="/Admin/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
 
                 </asp:PlaceHolder>
                 
-                <asp:PlaceHolder runat="server" ID="public">
-                <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
- <li id="Li1" runat="server"><a href="Players.aspx"><i class="fa fa-users fa-lg"></i> Players</a></li>
-                
-
-                </asp:PlaceHolder>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
