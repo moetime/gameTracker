@@ -8,7 +8,7 @@
 
                         <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GamesGridView" AutoGenerateColumns="false" DataKeyNames="GameID"
-                    OnRowDeleting="GamesGridView_RowDeleting" AllowSorting="true"
+                     AllowSorting="true"
                     OnSorting="GamesGridView_Sorting" OnRowDataBound="GamesGridView_RowDataBound" 
                     PagerStyle-CssClass="pagination-ys">
                     <Columns>

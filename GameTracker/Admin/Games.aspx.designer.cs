@@ -10,7 +10,7 @@
 namespace GameTracker {
     
     
-    public partial class Default {
+    public partial class Games {
         
         /// <summary>
         /// GamesGridView control.

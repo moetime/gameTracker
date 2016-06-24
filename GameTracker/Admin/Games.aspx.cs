@@ -11,7 +11,7 @@ using GameTracker.Models;
 using System.Web.ModelBinding;
 namespace GameTracker
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Games : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e) {
             // if loading the page for the first time, populate the student grid
