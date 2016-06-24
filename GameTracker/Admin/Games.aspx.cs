@@ -38,7 +38,7 @@ namespace GameTracker
 
                 // query the Gridview_template_item_view1 Table using EF and LINQ
                 var GamesList = (from allGames in db.Games
-                                   select allGames);
+                                 select allGames);
 
                 // bind the result to the GridView
                 GamesGridView.DataSource = GamesList.AsQueryable().OrderBy(SortString).ToList();
@@ -46,7 +46,42 @@ namespace GameTracker
             }
         }
 
-        
+        /**
+         * <summary>
+         * This event handler deletes a student from the db using EF
+         * </summary>
+         * 
+         * @method GamesGridView_RowDeleting
+         * @param {object} sender
+         * @param {GridViewDeleteEventArgs} e
+         * @returns {void}
+         */
+        protected void GamesGridView_RowDeleting(object sender, GridViewDeleteEventArgs e) {
+            // store which row was clicked
+            int selectedRow = e.RowIndex;
+
+            // get the selected GameID using the Grid's DataKey collection
+            int GameID = Convert.ToInt32(GamesGridView.DataKeys[selectedRow].Values["GameID"]);
+
+            // use EF to find the selected student in the DB and remove it
+            using (GameTrackerConn db = new GameTrackerConn()) {
+                // create object of the Student class and store the query string inside of it
+                Game deletedGame = (from gameRecords in db.Games
+                                    where gameRecords.GameID == GameID
+                                    select gameRecords).FirstOrDefault();
+
+                // remove the selected student from the db
+                db.Games.Remove(deletedGame);
+
+                // save my changes back to the database
+                db.SaveChanges();
+
+                // refresh the grid
+                this.GetGames();
+            }
+        }
+
+
 
         protected void GamesGridView_Sorting(object sender, GridViewSortEventArgs e) {
             // get the column to sorty by
