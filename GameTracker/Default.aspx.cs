@@ -14,7 +14,7 @@ namespace GameTracker
     public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e) {
-            // if loading the page for the first time, populate the student grid
+            // if loading the page for the first time, populate the game grid
             if (!IsPostBack) {
                 Session["SortColumn"] = "GameID"; // default sort column
                 Session["SortDirection"] = "ASC";
@@ -25,7 +25,7 @@ namespace GameTracker
 
         /**
          * <summary>
-         * This method gets the student data from the DB
+         * This method gets the game data from the DB
          * </summary>
          * 
          * @method GetGames
